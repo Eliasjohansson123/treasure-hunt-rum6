@@ -1,14 +1,43 @@
 /* Denna Heads-Up-Display är det fritt fram att styla om och placera på andra ställen! */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+header{
+background: #f4f4f4 /*ändra färg*/;
+padding: 1rem;
+text-align: center;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px /*15px*/;
+  border: 0;
+  background: black /*ändra färg*/;
+  color: #fff /*ändra färg*/;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+button:hover {
+  background: #444 /*ändra färg*/;
+}
 
 #hud {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: #333;
-      color: white;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      font-weight: bold;
-    }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
